@@ -1,0 +1,99 @@
+// nice sidebar
+
+.sidebar {
+  &__navbar {
+    height: 100%;
+    position: fixed;
+    background-color: $colorBlack;
+    width: 0;
+    left: -100%;
+    z-index: 999;
+    transition: 0.5s ease;
+    &.active {
+      width: 250px !important;
+      left: 0;
+    }
+  }
+
+  &__content {
+    transition: 0.5s ease;
+  }
+
+  &__side {
+    background-color: $colorWhite;
+    border-bottom: 1px solid $colorBlack;
+  }
+
+  &__list--menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      margin-bottom: 10px;
+      a {
+        padding: 15px 20px;
+        color: $colorWhite;
+        display: inline-block;
+        width: 100%;
+        text-transform: capitalize;
+        text-decoration: none;
+        transition: all 0.2s;
+
+        &.active {
+          background-color: #ffffff26;
+          border-radius: $BoRadius;
+          color: $colorYellow;
+        }
+      }
+
+      &:hover {
+        a {
+          color: $colorYellow;
+          background-color: #ffffff26;
+          border-radius: $BoRadius;
+        }
+      }
+    }
+  }
+}
+
+.sidebar__navbar {
+  &.active ~ .sidebar__content {
+    margin-left: 250px;
+    transition: 0.5s ease;
+
+    @media screen and(max-width: 768px) {
+      margin-left: 0;
+    }
+    section {
+      margin: 0 $marginlr;
+    }
+  }
+}
+
+.navabar {
+  &__menu {
+    width: 40px;
+    height: 40px;
+    color: $colorWhite;
+    background-color: $colorBlack;
+    font-size: 18px;
+    border-radius: 5px;
+
+    i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &:hover,
+    &:focus {
+      color: $colorWhite;
+    }
+  }
+}
+
+.brand__sidebar {
+  color: $colorWhite;
+}

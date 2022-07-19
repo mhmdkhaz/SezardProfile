@@ -1,0 +1,12 @@
+footer {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid $colorWhite;
+  font-family: Butler_Regular;
+  p {
+    text-transform: capitalize;
+    margin-top: 1px;
+    color: $colorWhite;
+    text-align: center;
+  }
+}

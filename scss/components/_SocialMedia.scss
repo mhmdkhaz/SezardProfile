@@ -1,0 +1,79 @@
+.social {
+  a {
+    margin-top: 10px;
+    width: 20%;
+    .icon {
+      font-size: 1.2rem;
+      color: $colorWhite;
+      padding: 8px;
+      transition: all 0.2s;
+      &:hover {
+        .fac {
+          color: #3b5998;
+          animation: bump 0.25s ease-in-out;
+          cursor: pointer;
+        }
+        .twi {
+          color: #55acee;
+          animation: bump 0.25s ease-in-out;
+          cursor: pointer;
+        }
+        .insta {
+          color: #e4405f;
+          animation: bump 0.25s ease-in-out;
+          cursor: pointer;
+        }
+        .linked {
+          color: #0a66c2;
+          animation: bump 0.25s ease-in-out;
+          cursor: pointer;
+        }
+        .behan {
+          color: #b06c3e;
+          animation: bump 0.25s ease-in-out;
+          cursor: pointer;
+        }
+        .what {
+          color: #25d366;
+          animation: bump 0.25s ease-in-out;
+          cursor: pointer;
+        }
+        .messa {
+          color: #00b2ff;
+          animation: bump 0.25s ease-in-out;
+          cursor: pointer;
+        }
+      }
+      .i {
+        @keyframes bump {
+          33% {
+            transform: scale(1.3);
+          }
+          66% {
+            transform: scale(0.8);
+          }
+          100% {
+            transform: scale(1);
+          }
+        }
+      }
+    }
+  }
+}
+
+.contact {
+  div {
+    color: $colorWhite;
+    i {
+      transition: all 0.2s;
+    }
+    &:hover {
+      i {
+        transform: rotateY(-360deg);
+      }
+    }
+    p {
+      text-transform: capitalize;
+    }
+  }
+}

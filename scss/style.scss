@@ -1,0 +1,14 @@
+@use "pages/custom";
+//abstracts
+@import "abstracts/variables";
+// Pages
+@import "pages/style", "pages/contact";
+
+//Components
+@import "components/cards", "components/loading", "components/SocialMedia";
+
+// Layouts
+@import "layout/navbar", "layout/footer", "layout/fonts", "layout/MainText";
+
+// base
+@import "base/typography", "base/common", "base/animation";

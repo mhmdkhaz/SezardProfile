@@ -1,0 +1,28 @@
+$colorBlack: #000;
+$colorWhite: #fff;
+$colorIndigo: #8000ff;
+$colorYellow: #ffcc00;
+
+// Responsive Variables
+$xx-layout: "only screen and (min-width: 1366px) and (max-width: 1600px)";
+$xl-layout: "only screen and (min-width: 1200px) and (max-width: 1365px)";
+$lg-layout: "only screen and (min-width: 992px) and (max-width: 1199px)";
+$md-layout: "only screen and (min-width: 768px) and (max-width: 991px)";
+$xs-layout: "only screen and (max-width: 767px)";
+$sm-layout: 767px;
+$esm-layout: "only screen and (min-width: 479px) and (max-width: 575px)";
+
+// radius
+$BoRadius: 33px;
+$BoFifty: 50%;
+
+// margin and padding
+$marginTp: 20px;
+$marginlr: 30px;
+$margin: 40px;
+
+$padding: 10px;
+
+// size font
+$sizeH: 2.2rem;
+$sizP: 1rem;

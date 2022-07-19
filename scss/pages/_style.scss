@@ -1,0 +1,87 @@
+.hero {
+  h1 {
+    font-size: $sizeH;
+    font-family: Butler_Bold;
+    font-weight: 800;
+    // color: $colorYellow;
+  }
+  p {
+    font-size: $sizP + 0.2rem;
+    font-family: Butler_ExtraBold;
+  }
+}
+
+.card-container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+
+  .card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: darken(white, 2%);
+    border-radius: 2px;
+    box-shadow: 2px 2px 5px rgba(#111, 0.35);
+    transition: transform 0.35s ease-out;
+    transform: translate(var(--x), var(--y)) scale(0.35) rotate(var(--angle));
+    will-change: transform;
+
+    &:hover {
+      transform: scale(1) rotate(0deg);
+      z-index: 1;
+
+      &:before {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.card:before {
+  content: "";
+  display: block;
+  width: 90%;
+  height: 80%;
+  margin: 5%;
+  background: var(--image) center center no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 5px rgba(#222, 0.35);
+  border-radius: 2px;
+  filter: sepia(0.2) brightness(0.9) contrast(1.2);
+  transition: opacity 0.35s ease-out;
+  opacity: 0.5;
+}
+
+.card:after {
+  content: var(--caption);
+  font-weight: 500;
+  color: $colorIndigo;
+  font-size: 3vmin;
+  opacity: 0.75;
+  text-align: center;
+}
+
+.customer {
+  .swiper {
+    width: 100%;
+    .swiper-slide {
+      height: 250px;
+      line-height: 300px;
+      text-align: center;
+      margin-left: 4px;
+      cursor: pointer;
+      img {
+        width: 100%;
+        height: 100%;
+        filter: grayscale(80%);
+        transition: all 0.2s;
+        &:hover {
+          filter: grayscale(0%);
+        }
+      }
+    }
+  }
+}
